@@ -7,6 +7,22 @@ Created on Sun May 21 09:25:24 2023
 # http://localhost:8501
 # cd C:\Users\Asad Ahmed\AppData\Roaming\JetBrains\PyCharmCE2022.3\scratches
 # streamlit run scratch.py [ARGUMENTS]
+# heroku logs --tail --app social-profile-p2p-webap
+
+import os
+import pickle
+import streamlit as st
+import pandas as pd
+import numpy as np
+
+
+# Shared by ChatGPT
+# Get the port number from the environment variable
+port = int(os.environ.get('PORT', 5000))
+# Shared by ChatGPT
+# Set the configuration options for Streamlit
+st.set_option('server.port', port)
+
 
 import pickle
 import streamlit as st
